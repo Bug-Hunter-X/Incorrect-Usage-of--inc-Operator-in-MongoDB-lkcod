@@ -1,0 +1,3 @@
+# Incorrect Usage of $inc Operator in MongoDB
+
+This repository demonstrates a common error when using the `$inc` operator in MongoDB to increment a numeric field.  The original code attempts to increment a non-existent field, resulting in no change to the document. The corrected version handles the scenario where the field does not exist by using the `$setOnInsert` operator to initialize it before incrementing.
